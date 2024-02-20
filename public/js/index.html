@@ -5,11 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TypeScript 4</title>
-  <script type="module" src="app.js"></script>
+  <script type="module" src="calc.js"></script>
 </head>
 
 <body>
   <h1>TypeScript 4</h1>
+
+  <form id="form">
+    <input id="num1" type="number" placeholder="num1">
+    <select name="action" id="action">
+      <option value="+">Plus</option>
+      <option value="-">Minus</option>
+      <option value="/">Divide</option>
+      <option value="*">Multiply</option>
+    </select>
+    <input id="num2" type="number" placeholder="num2">
+    <button type="submit">Calculate</button>
+  </form>
+
+  <p id="result-p">0</p>
+
 </body>
 
 </html>
