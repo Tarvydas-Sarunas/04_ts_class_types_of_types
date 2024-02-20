@@ -67,3 +67,38 @@ type AddressOptional = Partial<Address>;
 
 // tipas kur viskas butu privaloma
 type AddressAllRequired = Required<Address>;
+
+interface UserFull {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  address: {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+    geo: {
+      lat: number;
+      lng: number;
+    };
+  };
+  phone: number;
+  website: string;
+  company?: {
+    name: string;
+    catchPhrase: string;
+    bs: string;
+  };
+}
+
+// norime sukurti tipa kuriame butu is interface UserFull name, email, phone, website
+
+type UserInfo = Pick<UserFull, 'name' | 'email' | 'phone' | 'website'>;
+
+const uob1: UserInfo = {
+  name: 'Eny',
+  email: 'email@em.com',
+  phone: 35744,
+  website: 'www.ddd.sds',
+};

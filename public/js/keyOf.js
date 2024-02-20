@@ -16,3 +16,9 @@ const addr1 = {
     houseNr: 15,
     town: 'Kaunas',
 };
+const uob1 = {
+    name: 'Eny',
+    email: 'email@em.com',
+    phone: 35744,
+    website: 'www.ddd.sds',
+};
