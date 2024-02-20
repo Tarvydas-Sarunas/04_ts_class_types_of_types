@@ -17,6 +17,7 @@ const user1 = {
 };
 console.log('user1 ===', user1);
 const user2 = new User('James', 'Bond', true);
+// kaip su klasemis sukurto objekto galiu pakeisti kazkurio key: value
 user2.name = 'Serbentautas';
 console.log('user2 ===', user2);
 const user3 = new User('James', 'Bond', true);
